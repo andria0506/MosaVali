@@ -1,0 +1,316 @@
+{
+  "schema_version": 2,
+  "kind": "liquidity",
+  "version": "liquidity-regression-2.0+57e5ab09",
+  "winner": "challenger",
+  "decision": "Challenger selected using validation RMSE in GEL; test customers were not used for selection.",
+  "decision_ka": "მოდელი შეირჩა ვალიდაციის მონაცემებზე GEL-ში გამოთვლილი RMSE-ით; ტესტის მომხმარებლები შერჩევაში არ მონაწილეობდნენ.",
+  "features": [
+    {
+      "key": "income_cv",
+      "label_ka": "შემოსავლის არასტაბილურობა",
+      "label_en": "Income irregularity"
+    },
+    {
+      "key": "income_trend",
+      "label_ka": "შემოსავლის ბოლოდროინდელი ცვლილება",
+      "label_en": "Recent income trend"
+    },
+    {
+      "key": "liquid_months",
+      "label_ka": "ხელმისაწვდომი თანხა (ხარჯის თვეები)",
+      "label_en": "Liquid cash (months of essential costs)"
+    },
+    {
+      "key": "obligation_ratio",
+      "label_ka": "ფიქსირებული გადასახადები / შემოსავალი",
+      "label_en": "Fixed obligations / income"
+    },
+    {
+      "key": "fx_debt_ratio",
+      "label_ka": "დოლარის ვალის მომსახურება / შემოსავალი",
+      "label_en": "USD debt service / income"
+    },
+    {
+      "key": "discretionary_share",
+      "label_ka": "არააუცილებელი ხარჯის წილი",
+      "label_en": "Discretionary share of spending"
+    },
+    {
+      "key": "savings_rate",
+      "label_ka": "დანაზოგის განაკვეთი",
+      "label_en": "Savings rate"
+    },
+    {
+      "key": "overdraft_months",
+      "label_ka": "უარყოფითი ნაშთის თვეები",
+      "label_en": "Months with a negative balance"
+    },
+    {
+      "key": "income_sources",
+      "label_ka": "შემოსავლის წყაროების რაოდენობა",
+      "label_en": "Number of income sources"
+    }
+  ],
+  "reference": [
+    0.037028544177644576,
+    -0.005330447666765195,
+    10.940063739724911,
+    0.17089747118015686,
+    0.0,
+    0.17119450432190575,
+    0.10357820244866484,
+    0.0,
+    1.0
+  ],
+  "correction": 0.01295191679570662,
+  "coverage_target": 0.9,
+  "baseline_ratio": 1.132198794060424,
+  "baseline_rule": "Training mean cash need in essential-cost months",
+  "metrics": {
+    "validation": {
+      "champion": {
+        "mae_gel": 1236.3397473971295,
+        "rmse_gel": 2149.613006424877,
+        "r2": 0.3112401691929886,
+        "mean_actual_gel": 1243.3628043950182,
+        "mean_predicted_gel": 1317.244048708199,
+        "underprediction_rate": 0.20466666666666666,
+        "n": 3000
+      },
+      "challenger": {
+        "mae_gel": 1151.8885107049261,
+        "rmse_gel": 2085.435809262461,
+        "r2": 0.3517524239491927,
+        "mean_actual_gel": 1243.3628043950182,
+        "mean_predicted_gel": 1276.7317839750413,
+        "underprediction_rate": 0.19666666666666666,
+        "n": 3000
+      }
+    },
+    "test": {
+      "champion": {
+        "mae_gel": 1262.5528291080711,
+        "rmse_gel": 2222.0608840969658,
+        "r2": 0.36735515362366433,
+        "mean_actual_gel": 1350.968684916599,
+        "mean_predicted_gel": 1368.238122284477,
+        "underprediction_rate": 0.21566666666666667,
+        "n": 3000
+      },
+      "challenger": {
+        "mae_gel": 1183.4940596511149,
+        "rmse_gel": 2166.085579507565,
+        "r2": 0.3988272480743634,
+        "mean_actual_gel": 1350.968684916599,
+        "mean_predicted_gel": 1327.9822556202555,
+        "underprediction_rate": 0.202,
+        "n": 3000
+      },
+      "selected": {
+        "mae_gel": 1183.4940596511149,
+        "rmse_gel": 2166.085579507565,
+        "r2": 0.3988272480743634,
+        "mean_actual_gel": 1350.968684916599,
+        "mean_predicted_gel": 1327.9822556202555,
+        "underprediction_rate": 0.202,
+        "n": 3000,
+        "upper_coverage": 0.8923333333333333,
+        "mean_upper_gel": 3146.631237990871
+      },
+      "baseline": {
+        "mae_gel": 1986.8235071383392,
+        "rmse_gel": 2816.513512588405,
+        "r2": -0.016416587988895337,
+        "mean_actual_gel": 1350.968684916599,
+        "mean_predicted_gel": 1532.4062664419655,
+        "underprediction_rate": 0.265,
+        "n": 3000
+      }
+    },
+    "stress_regime": {
+      "champion": {
+        "mae_gel": 1459.5891922716319,
+        "rmse_gel": 2560.473884086672,
+        "r2": 0.27198473412823476,
+        "mean_actual_gel": 1666.5433308143593,
+        "mean_predicted_gel": 1344.20655712649,
+        "underprediction_rate": 0.28,
+        "n": 5000
+      },
+      "challenger": {
+        "mae_gel": 1375.2086328609555,
+        "rmse_gel": 2476.7317754032497,
+        "r2": 0.31882651091945646,
+        "mean_actual_gel": 1666.5433308143593,
+        "mean_predicted_gel": 1343.8588755174346,
+        "underprediction_rate": 0.2708,
+        "n": 5000
+      },
+      "selected": {
+        "mae_gel": 1375.2086328609555,
+        "rmse_gel": 2476.7317754032497,
+        "r2": 0.31882651091945646,
+        "mean_actual_gel": 1666.5433308143593,
+        "mean_predicted_gel": 1343.8588755174346,
+        "underprediction_rate": 0.2708,
+        "n": 5000,
+        "upper_coverage": 0.849,
+        "mean_upper_gel": 3192.3788898174157
+      },
+      "baseline": {
+        "mae_gel": 2114.85994425295,
+        "rmse_gel": 2984.971296658859,
+        "r2": 0.010581323908555262,
+        "mean_actual_gel": 1666.5433308143593,
+        "mean_predicted_gel": 1550.0877737099242,
+        "underprediction_rate": 0.3208,
+        "n": 5000
+      }
+    }
+  },
+  "fairness": {
+    "protected_attributes_used_as_inputs": false,
+    "tables": {
+      "gender": [
+        {
+          "group": "female",
+          "mae_gel": 1167.5087434308343,
+          "rmse_gel": 2124.749310753066,
+          "r2": 0.43633295942551165,
+          "mean_actual_gel": 1357.7707626106926,
+          "mean_predicted_gel": 1343.5980087539228,
+          "underprediction_rate": 0.19959128065395096,
+          "n": 1468,
+          "upper_coverage": 0.8916893732970027,
+          "mean_upper_gel": 3149.3819392823098
+        },
+        {
+          "group": "male",
+          "mae_gel": 1198.8115819822974,
+          "rmse_gel": 2204.968083699863,
+          "r2": 0.36098817669338046,
+          "mean_actual_gel": 1344.4507671261747,
+          "mean_predicted_gel": 1313.018857708882,
+          "underprediction_rate": 0.20430809399477806,
+          "n": 1532,
+          "upper_coverage": 0.8929503916449086,
+          "mean_upper_gel": 3143.9954485027297
+        }
+      ],
+      "age_band": [
+        {
+          "group": "<30",
+          "mae_gel": 1358.3160061206147,
+          "rmse_gel": 2433.5520694886523,
+          "r2": 0.39147653746797983,
+          "mean_actual_gel": 1628.941532033328,
+          "mean_predicted_gel": 1533.45057440373,
+          "underprediction_rate": 0.2393617021276596,
+          "n": 564,
+          "upper_coverage": 0.8776595744680851,
+          "mean_upper_gel": 3626.7971750980764
+        },
+        {
+          "group": "30–49",
+          "mae_gel": 1113.228583008684,
+          "rmse_gel": 2037.820249454091,
+          "r2": 0.3196053661220426,
+          "mean_actual_gel": 1192.4507595478476,
+          "mean_predicted_gel": 1238.093805709536,
+          "underprediction_rate": 0.1757469244288225,
+          "n": 1138,
+          "upper_coverage": 0.9094903339191565,
+          "mean_upper_gel": 3047.4530575629765
+        },
+        {
+          "group": "50–64",
+          "mae_gel": 1094.2899037828097,
+          "rmse_gel": 2092.512153158023,
+          "r2": 0.3542304031009492,
+          "mean_actual_gel": 1150.4780985044235,
+          "mean_predicted_gel": 1095.4551922541903,
+          "underprediction_rate": 0.19193154034229828,
+          "n": 818,
+          "upper_coverage": 0.8887530562347188,
+          "mean_upper_gel": 2761.6918661941077
+        },
+        {
+          "group": "65+",
+          "mae_gel": 1296.6847557147862,
+          "rmse_gel": 2249.1604811995335,
+          "r2": 0.5378884499995276,
+          "mean_actual_gel": 1741.8395452936059,
+          "mean_predicted_gel": 1695.9323848660063,
+          "underprediction_rate": 0.2375,
+          "n": 480,
+          "upper_coverage": 0.875,
+          "mean_upper_gel": 3473.5720440913533
+        }
+      ],
+      "region": [
+        {
+          "group": "tbilisi",
+          "mae_gel": 1408.0927600810323,
+          "rmse_gel": 2600.6660552867793,
+          "r2": 0.42100638751675046,
+          "mean_actual_gel": 1796.7639973946393,
+          "mean_predicted_gel": 1652.1224858450298,
+          "underprediction_rate": 0.21475054229934923,
+          "n": 1383,
+          "upper_coverage": 0.8792480115690527,
+          "mean_upper_gel": 3688.7414073909767
+        },
+        {
+          "group": "adjara",
+          "mae_gel": 988.6472281643071,
+          "rmse_gel": 1670.6616043258418,
+          "r2": 0.3082770778137299,
+          "mean_actual_gel": 872.2605560680312,
+          "mean_predicted_gel": 1078.368187722712,
+          "underprediction_rate": 0.1461038961038961,
+          "n": 308,
+          "upper_coverage": 0.9123376623376623,
+          "mean_upper_gel": 2812.6127564228022
+        },
+        {
+          "group": "imereti",
+          "mae_gel": 1019.0239337383874,
+          "rmse_gel": 1917.4377186182082,
+          "r2": 0.30617628197779156,
+          "mean_actual_gel": 1060.0996304207476,
+          "mean_predicted_gel": 1051.7738769389503,
+          "underprediction_rate": 0.19955654101995565,
+          "n": 451,
+          "upper_coverage": 0.9046563192904656,
+          "mean_upper_gel": 2660.360504122394
+        },
+        {
+          "group": "other",
+          "mae_gel": 977.8633465858479,
+          "rmse_gel": 1602.778675657452,
+          "r2": 0.2910933159806829,
+          "mean_actual_gel": 957.1331722194632,
+          "mean_predicted_gel": 1040.2959774114545,
+          "underprediction_rate": 0.20279720279720279,
+          "n": 858,
+          "upper_coverage": 0.8997668997668997,
+          "mean_upper_gel": 2648.318218197516
+        }
+      ]
+    },
+    "note": "Group error and upper-bound coverage on synthetic held-out customers; not proof of fairness."
+  },
+  "data": {
+    "train_n": 12000,
+    "validation_n": 3000,
+    "calibration_n": 2000,
+    "test_n": 3000,
+    "stress_n": 5000,
+    "label": "Maximum cumulative essential cash deficit over the next 12 months, including simulated one-off costs",
+    "source": "Synthetic event-driven cohort",
+    "split": "Customer-disjoint 60/15/10/15 train/validation/calibration/test; features precede outcomes",
+    "stress_source": "Independent synthetic 2014-style stress cohort",
+    "limitations": "Synthetic outcomes only. Upper-bound coverage is population-level, not a personal guarantee; shocks can reduce coverage."
+  }
+}

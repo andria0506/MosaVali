@@ -1,0 +1,80 @@
+{
+  "model_version": "liquidity-regression-2.0+57e5ab09",
+  "data": "Synthetic held-out test customers (same split as training) and the independent 2014-style stress cohort",
+  "rule_months": 3.0,
+  "fallback_months": 6.0,
+  "irregular_income_cv": 0.4,
+  "short_history_months": 6,
+  "reserve_effect": {
+    "test": {
+      "n": 3000,
+      "model_sets_reserve_share": 0.385,
+      "mean_uplift_over_rule_gel": 1816.5082687368545,
+      "reserve_coverage_with_model": 0.921,
+      "reserve_coverage_rule_only": 0.8503333333333334,
+      "model_set_group_coverage_with_model": 0.8891774891774892,
+      "model_set_group_coverage_rule_only": 0.7056277056277056,
+      "bound_collapsed_share": 0.050666666666666665
+    },
+    "stress": {
+      "n": 5000,
+      "model_sets_reserve_share": 0.4042,
+      "mean_uplift_over_rule_gel": 1716.7146016911338,
+      "reserve_coverage_with_model": 0.8878,
+      "reserve_coverage_rule_only": 0.8132,
+      "model_set_group_coverage_with_model": 0.8515586343394359,
+      "model_set_group_coverage_rule_only": 0.6669965363681346,
+      "bound_collapsed_share": 0.0464
+    }
+  },
+  "short_history": {
+    "test": {
+      "n": 3000,
+      "mae_gel_12m": 1183.4940596511149,
+      "mae_gel_6m": 1399.3073730972683,
+      "bound_coverage_12m": 0.8923333333333333,
+      "bound_coverage_6m": 0.865,
+      "groups": {
+        "regular_income": {
+          "n": 2709,
+          "bound_coverage_6m": 0.8911037283130306,
+          "reserve_coverage_3m_floor": 0.9254337393872277,
+          "reserve_coverage_6m_floor": 0.9708379475821336
+        },
+        "irregular_income": {
+          "n": 291,
+          "bound_coverage_6m": 0.6219931271477663,
+          "reserve_coverage_3m_floor": 0.8247422680412371,
+          "reserve_coverage_6m_floor": 0.9725085910652921
+        }
+      }
+    },
+    "stress": {
+      "n": 5000,
+      "mae_gel_12m": 1375.2086328609555,
+      "mae_gel_6m": 1606.0263974515947,
+      "bound_coverage_12m": 0.849,
+      "bound_coverage_6m": 0.8196,
+      "groups": {
+        "regular_income": {
+          "n": 4516,
+          "bound_coverage_6m": 0.8507528786536758,
+          "reserve_coverage_3m_floor": 0.8912754650132861,
+          "reserve_coverage_6m_floor": 0.9599202834366696
+        },
+        "irregular_income": {
+          "n": 484,
+          "bound_coverage_6m": 0.5289256198347108,
+          "reserve_coverage_3m_floor": 0.7293388429752066,
+          "reserve_coverage_6m_floor": 0.9421487603305785
+        }
+      }
+    }
+  },
+  "notes": [
+    "Reserve = max(3 months of essential costs, cautious estimate); coverage = share whose realised 12-month cash need is at or below the reserve.",
+    "Bound collapsed = cautious estimate within 0.5 GEL of the expected estimate: common when most similar customers need no extra cash (zero-inflated outcome).",
+    "Short history recomputes income variability, income trend, savings rate and the essential-cost scale from the last 6 months; obligation, USD-debt, discretionary and negative-balance features keep their 12-month values (approximation).",
+    "Synthetic data only; population-level coverage, not a personal guarantee."
+  ]
+}

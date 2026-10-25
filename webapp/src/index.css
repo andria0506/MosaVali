@@ -1,0 +1,87 @@
+@import '@fontsource/firago/300.css';
+@import '@fontsource/firago/400.css';
+@import '@fontsource/firago/500.css';
+@import '@fontsource/noto-sans-georgian/400.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-paper font-sans text-ink;
+    font-feature-settings: 'tnum' 0;
+  }
+  /* Georgian glyphs have tall ascenders and descenders, so tight display leading clips them. */
+  :lang(ka) .text-display-xl,
+  :lang(ka) .text-display {
+    line-height: 1.14;
+    letter-spacing: -0.03em;
+  }
+  :lang(ka) .text-title {
+    line-height: 1.2;
+  }
+  /* Never transform case: on Georgian, "uppercase" turns Mkhedruli into Mtavruli. */
+  :lang(ka) .uppercase {
+    text-transform: none;
+  }
+  ::selection {
+    @apply bg-accent-100 text-ink;
+  }
+}
+
+@layer components {
+  /* Range sliders: rounded focus ring instead of the browser's square outline. */
+  input[type='range'] {
+    @apply rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-400/60 focus-visible:ring-offset-4 focus-visible:ring-offset-night;
+  }
+  .hero-stage[data-settled='true'] .hero-stage-inner {
+    transform: none !important;
+  }
+  .num {
+    font-variant-numeric: tabular-nums;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .break-words-ka {
+    /* No auto-hyphenation: it produces wrong breaks in Georgian. Wrap whole words only. */
+    overflow-wrap: break-word;
+  }
+}
+
+@media print {
+  /* Signed-ready instruction: hide the app chrome, keep only the document. */
+  body * {
+    visibility: hidden;
+  }
+  .print-area,
+  .print-area * {
+    visibility: visible;
+  }
+  .print-area {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    margin: 0 !important;
+    border: none !important;
+  }
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

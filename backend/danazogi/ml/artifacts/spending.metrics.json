@@ -1,0 +1,310 @@
+{
+  "schema_version": 2,
+  "kind": "spending",
+  "version": "spending-regression-1.0+71fe66c8",
+  "winner": "champion",
+  "decision": "Champion selected using validation RMSE in GEL; test customers were not used for selection.",
+  "decision_ka": "მოდელი შეირჩა ვალიდაციის მონაცემებზე GEL-ში გამოთვლილი RMSE-ით; ტესტის მომხმარებლები შერჩევაში არ მონაწილეობდნენ.",
+  "features": [
+    {
+      "key": "last_spend_ratio",
+      "label_ka": "ბოლო თვის ხარჯი",
+      "label_en": "Last month's spending"
+    },
+    {
+      "key": "recent_spend_ratio",
+      "label_ka": "ბოლო სამი თვის ხარჯი",
+      "label_en": "Recent spending"
+    },
+    {
+      "key": "spend_cv",
+      "label_ka": "ხარჯების ცვალებადობა",
+      "label_en": "Spending variability"
+    },
+    {
+      "key": "spend_trend",
+      "label_ka": "ხარჯების ცვლილება",
+      "label_en": "Spending trend"
+    },
+    {
+      "key": "essential_share",
+      "label_ka": "აუცილებელი ხარჯების წილი",
+      "label_en": "Essential spending share"
+    },
+    {
+      "key": "income_to_spend",
+      "label_ka": "შემოსავალი ხარჯებთან შედარებით",
+      "label_en": "Income relative to spending"
+    },
+    {
+      "key": "income_cv",
+      "label_ka": "შემოსავლის ცვალებადობა",
+      "label_en": "Income variability"
+    },
+    {
+      "key": "income_trend",
+      "label_ka": "შემოსავლის ცვლილება",
+      "label_en": "Income trend"
+    }
+  ],
+  "reference": [
+    0.9966916363178173,
+    0.9994104648571303,
+    0.06866589041897085,
+    0.0004236851714747796,
+    0.8288054956780944,
+    1.1155462784203718,
+    0.037028544177644576,
+    0.0011427860894558646
+  ],
+  "correction": 0.007709224580930929,
+  "coverage_target": 0.9,
+  "baseline_ratio": 1.0407233256753943,
+  "baseline_rule": "Last three months' average spending",
+  "metrics": {
+    "validation": {
+      "champion": {
+        "mae_gel": 178.5623642459126,
+        "rmse_gel": 638.1358061916603,
+        "r2": 0.7659589582302757,
+        "mean_actual_gel": 1800.7477654915576,
+        "mean_predicted_gel": 1796.7978747243794,
+        "underprediction_rate": 0.3243333333333333,
+        "n": 3000
+      },
+      "challenger": {
+        "mae_gel": 194.1043335750844,
+        "rmse_gel": 649.5569575688157,
+        "r2": 0.7575064045444597,
+        "mean_actual_gel": 1800.7477654915576,
+        "mean_predicted_gel": 1800.8622382829574,
+        "underprediction_rate": 0.39366666666666666,
+        "n": 3000
+      }
+    },
+    "test": {
+      "champion": {
+        "mae_gel": 159.31844783530306,
+        "rmse_gel": 482.5564324143104,
+        "r2": 0.8512170656510175,
+        "mean_actual_gel": 1751.4224416537627,
+        "mean_predicted_gel": 1768.9450653053063,
+        "underprediction_rate": 0.314,
+        "n": 3000
+      },
+      "challenger": {
+        "mae_gel": 172.82275834854883,
+        "rmse_gel": 494.9518373652554,
+        "r2": 0.8434753349289974,
+        "mean_actual_gel": 1751.4224416537627,
+        "mean_predicted_gel": 1770.1874159496688,
+        "underprediction_rate": 0.395,
+        "n": 3000
+      },
+      "selected": {
+        "mae_gel": 159.31844783530306,
+        "rmse_gel": 482.5564324143104,
+        "r2": 0.8512170656510175,
+        "mean_actual_gel": 1751.4224416537627,
+        "mean_predicted_gel": 1768.9450653053063,
+        "underprediction_rate": 0.314,
+        "n": 3000,
+        "upper_coverage": 0.9013333333333333,
+        "mean_upper_gel": 1909.0920002719129
+      },
+      "baseline": {
+        "mae_gel": 151.86591363348683,
+        "rmse_gel": 483.78468608401704,
+        "r2": 0.8504587056273836,
+        "mean_actual_gel": 1751.4224416537627,
+        "mean_predicted_gel": 1722.7993260377918,
+        "underprediction_rate": 0.49166666666666664,
+        "n": 3000
+      }
+    },
+    "stress_regime": {
+      "champion": {
+        "mae_gel": 167.96787657740083,
+        "rmse_gel": 491.20909717811304,
+        "r2": 0.8526278035396728,
+        "mean_actual_gel": 1782.2880624852125,
+        "mean_predicted_gel": 1795.278236555215,
+        "underprediction_rate": 0.309,
+        "n": 5000
+      },
+      "challenger": {
+        "mae_gel": 180.7534623305982,
+        "rmse_gel": 504.5652015167619,
+        "r2": 0.8445046723048419,
+        "mean_actual_gel": 1782.2880624852125,
+        "mean_predicted_gel": 1795.4186929778903,
+        "underprediction_rate": 0.387,
+        "n": 5000
+      },
+      "selected": {
+        "mae_gel": 167.96787657740083,
+        "rmse_gel": 491.20909717811304,
+        "r2": 0.8526278035396728,
+        "mean_actual_gel": 1782.2880624852125,
+        "mean_predicted_gel": 1795.278236555215,
+        "underprediction_rate": 0.309,
+        "n": 5000,
+        "upper_coverage": 0.9032,
+        "mean_upper_gel": 1938.3773198717006
+      },
+      "baseline": {
+        "mae_gel": 161.88519634845193,
+        "rmse_gel": 496.07962179670494,
+        "r2": 0.8496908121638544,
+        "mean_actual_gel": 1782.2880624852125,
+        "mean_predicted_gel": 1748.317132470782,
+        "underprediction_rate": 0.4818,
+        "n": 5000
+      }
+    }
+  },
+  "fairness": {
+    "protected_attributes_used_as_inputs": false,
+    "tables": {
+      "gender": [
+        {
+          "group": "female",
+          "mae_gel": 158.53639578933053,
+          "rmse_gel": 533.5741587055733,
+          "r2": 0.804848846065732,
+          "mean_actual_gel": 1670.405687052098,
+          "mean_predicted_gel": 1687.5013505584382,
+          "underprediction_rate": 0.3065395095367847,
+          "n": 1468,
+          "upper_coverage": 0.9025885558583107,
+          "mean_upper_gel": 1819.4522045774795
+        },
+        {
+          "group": "male",
+          "mae_gel": 160.06782929972061,
+          "rmse_gel": 428.00199282936273,
+          "r2": 0.8892854779328185,
+          "mean_actual_gel": 1829.0546843138434,
+          "mean_predicted_gel": 1846.986431655438,
+          "underprediction_rate": 0.32114882506527415,
+          "n": 1532,
+          "upper_coverage": 0.9001305483028721,
+          "mean_upper_gel": 1994.9870525430804
+        }
+      ],
+      "age_band": [
+        {
+          "group": "<30",
+          "mae_gel": 180.1801378384419,
+          "rmse_gel": 536.4015613074332,
+          "r2": 0.7910842517737728,
+          "mean_actual_gel": 1952.376314864126,
+          "mean_predicted_gel": 2008.7758369544506,
+          "underprediction_rate": 0.274822695035461,
+          "n": 564,
+          "upper_coverage": 0.9148936170212766,
+          "mean_upper_gel": 2157.1160522439236
+        },
+        {
+          "group": "30–49",
+          "mae_gel": 174.91737748519802,
+          "rmse_gel": 523.8338248399791,
+          "r2": 0.8335542543792462,
+          "mean_actual_gel": 1947.0016909719434,
+          "mean_predicted_gel": 1957.1381207722557,
+          "underprediction_rate": 0.351493848857645,
+          "n": 1138,
+          "upper_coverage": 0.8910369068541301,
+          "mean_upper_gel": 2119.3280913682897
+        },
+        {
+          "group": "50–64",
+          "mae_gel": 152.156094239582,
+          "rmse_gel": 352.07183909749534,
+          "r2": 0.922900564996526,
+          "mean_actual_gel": 1927.660401927294,
+          "mean_predicted_gel": 1935.0056211399956,
+          "underprediction_rate": 0.3691931540342298,
+          "n": 818,
+          "upper_coverage": 0.8960880195599022,
+          "mean_upper_gel": 2094.2851303296898
+        },
+        {
+          "group": "65+",
+          "mae_gel": 110.02934395603027,
+          "rmse_gel": 505.4703419861587,
+          "r2": 0.2111953503627907,
+          "mean_actual_gel": 751.2769797402553,
+          "mean_predicted_gel": 757.9746757130534,
+          "underprediction_rate": 0.17708333333333334,
+          "n": 480,
+          "upper_coverage": 0.91875,
+          "mean_upper_gel": 803.629047423678
+        }
+      ],
+      "region": [
+        {
+          "group": "tbilisi",
+          "mae_gel": 188.70882069210964,
+          "rmse_gel": 529.584370456274,
+          "r2": 0.8624011172582038,
+          "mean_actual_gel": 2108.6253891520555,
+          "mean_predicted_gel": 2126.1136111107776,
+          "underprediction_rate": 0.32465654374548086,
+          "n": 1383,
+          "upper_coverage": 0.9060014461315979,
+          "mean_upper_gel": 2301.58784947817
+        },
+        {
+          "group": "adjara",
+          "mae_gel": 169.55397663611052,
+          "rmse_gel": 676.8410350940823,
+          "r2": 0.7049206485536046,
+          "mean_actual_gel": 1673.9035437481311,
+          "mean_predicted_gel": 1692.7363912149665,
+          "underprediction_rate": 0.30194805194805197,
+          "n": 308,
+          "upper_coverage": 0.9090909090909091,
+          "mean_upper_gel": 1821.579265755859
+        },
+        {
+          "group": "imereti",
+          "mae_gel": 126.96206746074948,
+          "rmse_gel": 264.3827486300805,
+          "r2": 0.912166595341602,
+          "mean_actual_gel": 1430.7546732806557,
+          "mean_predicted_gel": 1440.873186557861,
+          "underprediction_rate": 0.3436807095343681,
+          "n": 451,
+          "upper_coverage": 0.8780487804878049,
+          "mean_upper_gel": 1552.9742694186389
+        },
+        {
+          "group": "other",
+          "mae_gel": 125.27800379953553,
+          "rmse_gel": 401.1686679369629,
+          "r2": 0.8002145976952098,
+          "mean_actual_gel": 1372.0346883916027,
+          "mean_predicted_gel": 1393.034331139753,
+          "underprediction_rate": 0.28554778554778554,
+          "n": 858,
+          "upper_coverage": 0.9032634032634033,
+          "mean_upper_gel": 1495.037524040582
+        }
+      ]
+    },
+    "note": "Group error and upper-bound coverage on synthetic held-out customers; not proof of fairness."
+  },
+  "data": {
+    "train_n": 12000,
+    "validation_n": 3000,
+    "calibration_n": 2000,
+    "test_n": 3000,
+    "stress_n": 5000,
+    "label": "Total spending in the next month, including simulated one-off costs",
+    "source": "Synthetic event-driven cohort",
+    "split": "Customer-disjoint 60/15/10/15 train/validation/calibration/test; features precede outcomes",
+    "stress_source": "Independent synthetic 2014-style stress cohort",
+    "limitations": "Synthetic outcomes only. Upper-bound coverage is population-level, not a personal guarantee; shocks can reduce coverage."
+  }
+}

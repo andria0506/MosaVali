@@ -1,0 +1,23 @@
+# Netlify hosts the webapp only. The FastAPI backend (models, consent sessions, audit log) runs on
+# Render (see render.yaml); /api/* is proxied there, so the browser sees a single origin.
+# If the Render service gets a different URL, change the `to` of the first redirect.
+
+[build]
+  base = "webapp"
+  command = "npm ci && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://mosavali-api.onrender.com/api/:splat"
+  status = 200
+  force = true
+
+# Client-side routes (/app/...) fall back to the single-page app.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

@@ -1,0 +1,1333 @@
+{
+  "brand": {
+    "name": "MosaVali"
+  },
+  "nav": {
+    "features": "Features",
+    "how": "How it works",
+    "banks": "Banks",
+    "security": "Security",
+    "launch": "Launch app",
+    "language": "Language",
+    "problem": "Why"
+  },
+  "hero": {
+    "line1": "Save with a plan.",
+    "line2": "Shield it from risk.",
+    "line3": "Reach your goals.",
+    "sub": "MosaVali learns from your financial history, your goals and Georgia-specific risks — GEL depreciation, inflation, NBG rate changes — and shows you how to organize your savings.",
+    "cta": "Get started",
+    "secondary": "How it works",
+    "disclaimer": "A comparison and education tool. Not investment advice.",
+    "scroll": "Scroll down"
+  },
+  "common": {
+    "months": "months",
+    "assumptions": "Assumptions",
+    "back": "Back",
+    "comingSoon": "Coming soon",
+    "years": "years",
+    "planned": "Planned"
+  },
+  "tabs": {
+    "profile": "Profile",
+    "plan": "Plan",
+    "privacy": "Privacy",
+    "analysis": "Analysis",
+    "stocks": "Stocks",
+    "news": "News"
+  },
+  "buffer": {
+    "title": "Protected buffer",
+    "total": "Total savings",
+    "protected": "Must stay available",
+    "free": "Free to invest",
+    "why": "Why this amount",
+    "covers": "{{months}} months of spending"
+  },
+  "risk": {
+    "title": "Risk level",
+    "capacity": "Your capacity",
+    "selected": "Your choice",
+    "low": "Low",
+    "high": "High",
+    "above": "This is above your capacity",
+    "near": "Slightly above your capacity",
+    "within": "Within your capacity",
+    "bufferUnchanged": "Buffer unchanged",
+    "badYear": "Possible drop in a bad year"
+  },
+  "profile": {
+    "title": "Financial profile",
+    "covered": "Your savings cover",
+    "savingsHistory": "Savings, 12 months",
+    "stability": "Income stability",
+    "irregular": "Irregular",
+    "stable": "Stable",
+    "split": "Spending by currency"
+  },
+  "currency": {
+    "GEL": "GEL",
+    "USD": "USD"
+  },
+  "reasons": {
+    "buffer": {
+      "income_irregular": "Your income is irregular: in {{lowMonths}} of the last 12 months it was 40% below average.",
+      "coverage_low": "Your savings cover only {{months}} months of spending.",
+      "loan_payment": "Your loan payment of {{amount}} ₾ a month must always be covered.",
+      "income_stable": "Your salary has been stable for {{months}} months.",
+      "coverage_strong": "Your savings cover {{months}} months — {{target}} months is enough as a buffer.",
+      "usd_rent": "You pay rent in USD: part of the buffer ({{amount}} ₾) stays in USD so a GEL drop can't hurt you.",
+      "essentials": "Your essential spending is about {{amount}} ₾ a month."
+    },
+    "risk": {
+      "income_irregular": "Your income is irregular, so you're likely to need these savings soon — possibly right when markets are down.",
+      "coverage_low": "With {{months}} months of savings, you can't afford to wait for a loss to recover.",
+      "loan": "Your loan payment ({{amount}} ₾ a month) is fixed. Markets are not.",
+      "emergency_goal": "An emergency fund may be needed on any day — its value shouldn't swing.",
+      "horizon_short": "Your goal is {{months}} months away. After big crashes, markets have historically taken 3–5 years to recover.",
+      "fixed_target": "A down payment is a fixed amount — a 30% drop would mean postponing the purchase.",
+      "it_correlation": "Your income depends on the IT sector — tech-stock crashes and IT layoffs often happen together.",
+      "usd_rent": "You pay rent in USD — your buffer must be protected from GEL swings."
+    },
+    "capacity": {
+      "income_irregular": "Irregular income ({{lowMonths}} weak months)",
+      "coverage_low": "Savings cover {{months}} months",
+      "loan": "Loan payment of {{amount}} ₾ a month",
+      "usd_income": "{{share}}% of income in USD",
+      "income_stable": "Stable salary for {{months}} months",
+      "coverage_strong": "Savings cover {{months}} months",
+      "no_debt": "No loans",
+      "usd_rent": "{{share}}% of spending in USD (rent)"
+    },
+    "tip": {
+      "buffer_first": {
+        "title": "Buffer first, then invest",
+        "body": "For a freelancer, a safe reserve is {{months}} months of essential spending. Reach that goal first."
+      },
+      "good_month": {
+        "title": "Save more in good months",
+        "body": "When income is above average, move {{share}}% of the difference straight into your buffer."
+      },
+      "loan_end": {
+        "title": "Your loan ends soon",
+        "body": "From {{date}}, {{amount}} ₾ a month frees up — your plan will update automatically."
+      },
+      "usd_rent": {
+        "title": "Your rent is protected",
+        "body": "{{amount}} ₾ of your buffer is held in USD, so your rent stays covered whatever the GEL rate does."
+      },
+      "bonus": {
+        "title": "December bonus",
+        "body": "Last year's bonus was {{amount}} ₾. If it comes again, your apartment goal finishes a month earlier."
+      },
+      "build_buffer": {
+        "title": "Grow your buffer first",
+        "body": "Aim for {{months}} months of essential spending before investing more."
+      },
+      "strong_buffer": {
+        "title": "Your cushion is solid",
+        "body": "Savings cover {{months}} months. The rest can work toward your goals."
+      }
+    },
+    "alert": {
+      "buffer_low": {
+        "title": "Your buffer is small",
+        "body": "Your buffer covers {{months}} months. Two weak months in a row could use it up."
+      },
+      "monthly_summary": {
+        "title": "Your monthly summary is ready",
+        "body": "You saved {{amount}} ₾. Your goal is {{progress}}% complete.",
+        "goal_body": "{{goal_en}}: {{progress}}% saved. Monthly contribution: {{amount}} ₾."
+      },
+      "risk_news": {
+        "title": "Risk news: {{ticker}}",
+        "body": "New export restrictions affecting {{ticker}} are under discussion. It's 5% of your portfolio.",
+        "live_body": "“{{headline}}” ({{source}}). {{ticker}} is {{share}}% of this goal."
+      },
+      "drift": {
+        "title": "Your portfolio drifted from the plan",
+        "body": "Stocks and ETFs are now {{current}}%, planned {{planned}}%. That's above your chosen risk level."
+      },
+      "goal_approaching": {
+        "title": "Goal coming up: {{goal_en}}",
+        "body": "Due in {{months}} months, {{progress}}% saved — {{left}} ₾ to go."
+      }
+    },
+    "replan": {
+      "income_drop": "Over the last {{months}} months, income was {{pct}}% below average.",
+      "rent_up": "Rent went up from ${{before}} to ${{after}}.",
+      "why": {
+        "buffer_up": "Weak months need a larger reserve.",
+        "buffer_up_rent": "The buffer must cover three months of the new rent.",
+        "investable_down": "A larger buffer leaves less to invest.",
+        "capacity_down": "Swinging income lowers your risk capacity.",
+        "contribution_down": "Saving less in weak months is more realistic.",
+        "contribution_down_rent": "Higher rent leaves less each month.",
+        "investable_up": "More of your savings is free once the buffer is covered.",
+        "capacity_up_data": "Steadier income or more savings let you carry a little more risk.",
+        "buffer_calc": "Covers {{months}} months of essential spending ({{essential}} ₾ a month).",
+        "investable_calc": "Savings of {{savings}} ₾ minus the {{buffer}} ₾ buffer."
+      },
+      "observed": {
+        "statement": "Your bank statement shows income of {{incomeAfter}} ₾ and spending of {{spendingAfter}} ₾ a month. Your plan was based on {{incomeBefore}} ₾ and {{spendingBefore}} ₾.",
+        "questionnaire": "Your answers give income of {{incomeAfter}} ₾ and spending of {{spendingAfter}} ₾ a month. Your plan was based on {{incomeBefore}} ₾ and {{spendingBefore}} ₾.",
+        "bank": "Your connected bank shows income of {{incomeAfter}} ₾ and spending of {{spendingAfter}} ₾ a month. Your plan was based on {{incomeBefore}} ₾ and {{spendingBefore}} ₾."
+      }
+    },
+    "quick": {
+      "headline_split": "Your savings cover {{months}} months of essentials. Part of it could be invested.",
+      "headline_buffer_only": "Your savings cover {{months}} months. For now, all of it should stay available."
+    },
+    "stockfit": {
+      "concentration": "After this, {{pct}}% of the goal would be in one company.",
+      "job_sector": "Your income comes from the same sector. If it struggles, both your job and this stock could suffer at once.",
+      "volatile": "Historically this stock has fallen up to {{pct}}% in a year.",
+      "over_budget": "This is more than your plan's stock part."
+    },
+    "stockfact": {
+      "return5y": "Over 5 years: {{pct}}%.",
+      "change1y": "Last 12 months: {{pct}}%.",
+      "volatility": "Typical yearly swing (volatility): {{pct}}%.",
+      "volatility_vs_world": "Typical yearly swing (volatility): {{pct}}%, vs {{world}}% for a world index fund."
+    },
+    "stockdesc": {
+      "swings_much": "Its price swings about {{ratio}}× as much as a world index fund.",
+      "swings_more": "Its price swings somewhat more than a world index fund (about {{ratio}}×).",
+      "swings_like": "Its price moves about as much as a world index fund.",
+      "grew_strongly": "Over 5 years it grew strongly (+{{pct}}%).",
+      "grew": "Over 5 years it grew {{pct}}%.",
+      "fell": "Over 5 years it fell {{pct}}%.",
+      "deep_falls": "In its worst 12 months it lost {{pct}}% — too deep for money you may need within a few years.",
+      "falls": "In its worst 12 months it lost {{pct}}%.",
+      "mild_falls": "Its worst 12-month fall was a milder {{pct}}%."
+    }
+  },
+  "assumptions": {
+    "essential_spending": "Essential spending per month",
+    "buffer_months_now": "Buffer now",
+    "buffer_months_target": "Buffer target",
+    "data_period": "Period analysed",
+    "usd_gel_rate": "USD/GEL rate",
+    "history_window": "Historical period",
+    "gel_deposit_rate": "GEL deposit rate (assumed)",
+    "usd_deposit_rate": "USD deposit rate",
+    "fees_excluded": "Fees not included",
+    "stress_horizon": "Stress test period",
+    "from_answers": "Estimated from your answers, not bank data",
+    "loan_months_left": "Loan months left (assumed)",
+    "rate_nbg": "Rate: official National Bank of Georgia, updated daily",
+    "rate_estimate": "Rate: estimate (NBG rate unavailable)",
+    "history_live": "Ranges: real monthly returns in GEL over the last 5 years (Yahoo Finance prices, NBG rates)",
+    "history_sample": "Ranges: sample data (live history unavailable)",
+    "usd_cash_proxy": "USD deposits modelled with the US T-bill rate",
+    "ge_treasury_yield": "Georgian treasury yield (assumed)",
+    "nbg_policy_rate": "NBG policy rate now (real)",
+    "gel_deposit_spread": "GEL deposits: NBG rate each month + (assumed)",
+    "treasury_spread": "Georgian treasuries: NBG rate each month + (assumed)",
+    "from_statement": "Measured from your bank statement; categories by merchant keywords",
+    "gel_deposit_rate_real": "GEL deposit rate now (actual rates by year, World Bank; latest months follow the NBG rate)",
+    "treasury_proxy": "Georgian treasuries: deposit-rate path used as a proxy (no public yield series)",
+    "inflation_latest": "Inflation in Georgia, latest year (World Bank)",
+    "treasury_tibr": "Georgian treasuries: 6-month TIBR now (NBG interbank rate, used each month)",
+    "passthrough_deposit": "Share of NBG rate changes reaching deposit rates (measured)",
+    "deposit_repricing": "Deposits reprice on average after (assumed)"
+  },
+  "mixes": {
+    "conservative": "Conservative",
+    "balanced": "Balanced",
+    "growth": "Growth"
+  },
+  "landing": {
+    "features": {
+      "eyebrow": "Five tabs",
+      "title": "Five features.\nOne calm plan.",
+      "buffer": {
+        "title": "Protected buffer",
+        "body": "First we set aside what must stay available — the cash-need model sizes it from your history. The rest is free to invest.",
+        "locked": "Plans never touch the buffer"
+      },
+      "risk": {
+        "title": "Risk that fits your life",
+        "body": "Your risk capacity comes from your history, not a quiz. A mission above it needs your explicit OK — or is blocked."
+      },
+      "stress": {
+        "title": "Georgian stress tests",
+        "body": "Your plan replayed through 2008–09, the 2014–15 lari shock, 2020 and 2021–22 — measured in your goal's buying power.",
+        "scenarios": {
+          "gel": "GEL −20%",
+          "inflation": "Inflation 10%",
+          "nbg": "NBG +2 pp",
+          "crash": "Markets −30%"
+        },
+        "note": "One-year stylised replays on the demo customer's plan — approximations, not a forecast."
+      },
+      "monitor": {
+        "title": "Alerts only when it matters",
+        "body": "A maturing deposit, a thin reserve, a currency mismatch — surfaced when a decision is due. No daily prices.",
+        "noise": "NVDA +0.8% today",
+        "noiseLabel": "We won't send you this"
+      },
+      "stocks": {
+        "title": "Check a stock before it touches your goal",
+        "body": "Live prices and headlines for the stocks you explore, and what putting part of your plan into one would do to your chance of reaching the goal.",
+        "plan": "Your plan",
+        "withStock": "With 20% in one big-tech stock",
+        "badCase": "Bad case (worst 5%): −{{amount}}",
+        "chip": "{{pct}}% chance the stock halves at some point"
+      }
+    },
+    "how": {
+      "eyebrow": "How it works",
+      "title": "From bank data\nto a plan in minutes.",
+      "steps": {
+        "connect": {
+          "title": "Connect your bank",
+          "body": "Read-only access through open banking. You choose what we see."
+        },
+        "goal": {
+          "title": "Check your goal",
+          "body": "A car in 4 years, an apartment — priced in the currency you will spend."
+        },
+        "plan": {
+          "title": "Compare missions, replay crises",
+          "body": "Protect, Goal, Balance or Growth — with the chance, the bad case and the assumptions shown."
+        },
+        "buy": {
+          "title": "Approve every step",
+          "body": "Each proposed trade waits for your confirmation. The AI never executes."
+        }
+      }
+    },
+    "banks": {
+      "title": "Supported banks",
+      "body": "Consent-based, read-only access. The demo uses synthetic banks and accounts.",
+      "available": "In the demo"
+    },
+    "security": {
+      "eyebrow": "Security",
+      "title": "Your money never leaves your bank.",
+      "read": {
+        "title": "Read-only access",
+        "body": "We read only the accounts and transactions you consent to. Withdraw consent at any time."
+      },
+      "hold": {
+        "title": "We never hold money or trade",
+        "body": "MosaVali prepares an instruction for you and your bank. Every step waits for your approval."
+      },
+      "honest": {
+        "title": "No promises, only assumptions",
+        "body": "We compare options and show the assumptions behind every number. Advice is given through a licensed partner; this demo is not investment advice."
+      }
+    },
+    "cta": {
+      "title": "Start with your goal.",
+      "button": "Try the demo",
+      "sandbox": "Practice sandbox"
+    },
+    "footer": {
+      "rights": "© 2026 MosaVali. Hackathon prototype — all data is simulated.",
+      "disclaimer": "MosaVali is a non-discretionary planning tool: the customer approves every step and it never executes. Advice is provided through a licensed partner. This prototype uses synthetic data only."
+    },
+    "episodes": {
+      "S08": "2008–09 crisis",
+      "S15": "2014–15 lari shock",
+      "S20": "2020 pandemic",
+      "S22": "2021–22 inflation"
+    },
+    "preview": {
+      "recommended": "Recommended: {{name}}",
+      "allocTitle": "Where the money goes",
+      "allocNote": "Simulated on-time chance: {{n}}"
+    },
+    "problem": {
+      "eyebrow": "The problem",
+      "title": "Investing isn't gambling.\nInvesting without a plan is.",
+      "body": "Most people who lose money investing don't pick bad stocks. They run out of cash at the wrong moment.",
+      "chain": {
+        "shock": {
+          "title": "A weak month or an emergency",
+          "body": "Income drops, the car breaks, a family member needs help."
+        },
+        "noBuffer": {
+          "title": "No safe buffer",
+          "body": "There's no cash set aside, so the money has to come from investments."
+        },
+        "forcedSale": {
+          "title": "Forced sale at a loss",
+          "body": "Selling when prices are down turns a temporary dip into a real loss."
+        },
+        "gambling": {
+          "title": "\"Investing is gambling\"",
+          "body": "The lesson people take away, and why savings stay in deposits."
+        }
+      },
+      "facts": {
+        "deposits": {
+          "value": "Most",
+          "label": "Georgian household savings stay in bank deposits.",
+          "source": "Source: National Bank of Georgia (NBG)"
+        },
+        "foreign": {
+          "value": "~43%",
+          "label": "of deposits are held in foreign currency.",
+          "source": "Source: NBG, July 2026"
+        }
+      },
+      "answer": "MosaVali breaks the chain at step two: it sets aside a protected buffer first, so investments never have to be sold in a bad month."
+    }
+  },
+  "design": {
+    "title": "Design system",
+    "colors": "Colors",
+    "type": "Typography",
+    "components": "Components",
+    "sample": "Save with a plan and protect your savings from GEL depreciation",
+    "toneSafe": "Safe",
+    "toneNeutral": "Neutral",
+    "toneCaution": "Attention",
+    "primary": "Continue",
+    "secondary": "Later"
+  },
+  "months": {
+    "long": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    "short": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ]
+  },
+  "goalTypes": {
+    "emergency_fund": "Emergency fund",
+    "home": "Home",
+    "education": "Education",
+    "car": "Car",
+    "travel": "Travel",
+    "retirement": "Retirement",
+    "other": "Other"
+  },
+  "assets": {
+    "gel_deposit": "GEL deposits",
+    "usd_deposit": "USD deposits",
+    "ge_treasury": "Georgian treasuries",
+    "global_etf": "Global ETFs",
+    "stocks": "Stocks"
+  },
+  "sectors": {
+    "tech": "Technology",
+    "communication": "Communication",
+    "consumer": "Consumer",
+    "staples": "Everyday goods",
+    "healthcare": "Healthcare",
+    "financials": "Finance",
+    "design": "Design"
+  },
+  "categories": {
+    "rent": "Rent",
+    "groceries": "Groceries",
+    "utilities": "Utilities",
+    "transport": "Transport",
+    "loan": "Loan",
+    "leisure": "Leisure",
+    "other": "Other"
+  },
+  "app": {
+    "next": "Continue",
+    "back": "Back",
+    "close": "Close",
+    "error": "Something went wrong. Please try again.",
+    "shell": {
+      "myProfile": "My financial profile",
+      "demo": "Demo",
+      "switchPersona": "Switch customer",
+      "personaHint": "Each persona has their own bank data, goals and alerts.",
+      "noCustomer": "Choose a customer",
+      "switchNotice": "Switching customer ends the current session — the new customer consents again.",
+      "synthetic": "Synthetic data",
+      "tagline": "Savings planner",
+      "menu": "Menu",
+      "freeToInvest": "{{amount}} free to invest"
+    },
+    "welcome": {
+      "start": "Start with your numbers",
+      "startNote": "Set a goal and add your income, spending and savings. This preview uses your entries to create a synthetic history.",
+      "resume": "Continue my plan",
+      "samples": "Explore sample profiles",
+      "title": "Your savings,\nwith a plan.",
+      "points": {
+        "buffer": "Keep what you need safe and available",
+        "risk": "Risk matched to your real finances",
+        "approve": "You approve every step — MosaVali never executes"
+      },
+      "lead": "MosaVali reads your bank data with consent, protects the cash you may need first, then builds a plan you approve step by step.",
+      "pickCustomer": "Choose a customer to begin",
+      "syntheticNote": "Synthetic demo customers — each has generated bank data.",
+      "sessionGone": "Your consent expired or was revoked. Connect again to continue.",
+      "syntheticBadge": "Demo — synthetic data only",
+      "otherWays": "Or try it your way",
+      "organiser": "Organiser customer",
+      "organiserSub": "Pick one of {{n}} synthetic customers from the organisers' workbook",
+      "organiserSearch": "Search by name or id…",
+      "organiserEmpty": "No match.",
+      "ownNumbers": "Enter your own numbers",
+      "ownNumbersSub": "A synthetic customer built from what you type",
+      "import": "Import a statement (CSV)",
+      "importSub": "Analysed on this device — transactions never leave it"
+    },
+    "connect": {
+      "title": "Connect your banks",
+      "lead": "We read your history through open banking. We can never move money.",
+      "chooseBank": "Your bank",
+      "read": "What we read and why",
+      "scopes": {
+        "accounts": {
+          "title": "Your accounts",
+          "why": "To see where your savings are."
+        },
+        "balances": {
+          "title": "Account balances",
+          "why": "To know what is available today."
+        },
+        "transactions_12m": {
+          "title": "12 months of transactions",
+          "why": "To understand income stability and spending."
+        },
+        "loans": {
+          "title": "Loans",
+          "why": "So loan payments always stay covered."
+        },
+        "transactions": {
+          "title": "Transactions (up to 12 months)",
+          "why": "To understand income stability and spending."
+        },
+        "deposits": {
+          "title": "Term deposits and maturities",
+          "why": "So maturing deposits are planned, not forgotten."
+        }
+      },
+      "optional": "Optional",
+      "never": "What we never do",
+      "neverItems": {
+        "move": "Move money or make payments",
+        "sell": "Sell or share your data",
+        "trade": "Execute anything — you approve every step"
+      },
+      "expires": "Consent lasts {{n}} days. You can withdraw it at any time in Profile.",
+      "allow": "Allow read-only access",
+      "fallback": "Skip — answer questions instead",
+      "importCta": "Import a statement instead",
+      "banks": "Your banks",
+      "bankWhy": "Accounts and transactions are read with your consent.",
+      "scopeHint": "Balances and transactions are required for the analysis.",
+      "required": "Required",
+      "duration": "Consent duration",
+      "days": "{{n}} days",
+      "cashAtHome": "Cash kept at home (₾)",
+      "cashHint": "Banks can't see cash at home, so this is the only number you type.",
+      "demoControls": "Demo controls",
+      "timeoutLabel": "Simulate a bank timeout",
+      "timeoutNone": "No timeout — all banks respond",
+      "syntheticNote": "Demo: consent opens a synthetic session — no real bank is contacted.",
+      "allowing": "Connecting…"
+    },
+    "home": {
+      "hello": "Hello, {{name}}",
+      "totalSavings": "Total savings",
+      "covers": "Covers {{months}} months",
+      "goals": "Your goals",
+      "newGoal": "New goal",
+      "replanBanner": "Your plan was updated",
+      "replanBody": "Something changed in your finances. See what and why.",
+      "latestAlert": "Latest alert",
+      "seeAll": "See all",
+      "sandbox": "Practice sandbox",
+      "sandboxBody": "Learn investing without real money.",
+      "protected": "Protected reserve",
+      "protectedSub": "Stays available first",
+      "free": "Free to invest",
+      "monthlyLimit": "Monthly saving limit",
+      "nextMonth": "Next month you may spend {{expected}} (cautious: {{cautious}})",
+      "coverageNote": "The cautious bound targets {{pct}}% coverage on synthetic customers — a calibration, not a personal guarantee.",
+      "goal": "Your goal",
+      "chance": "{{pct}}% chance on time",
+      "inflationTitle": "Your inflation",
+      "inflationYours": "Personal inflation",
+      "inflationNational": "National inflation",
+      "idleCost": "Idle cash loses about {{amount}} a year at your inflation rate.",
+      "finderTitle": "Savings finder",
+      "finderBody": "People like you ({{group}}) could free about {{amount}} a month.",
+      "alertsTitle": "Alerts",
+      "partialData": "Partial data: a bank timed out or a consent scope was skipped. The saving limit stays at zero until everything is connected.",
+      "cpiNote": "Category inflation rates are labelled assumptions shaped like Geostat CPI."
+    },
+    "goal": {
+      "estimateNote": "An estimate from simulated scenarios, not a guaranteed outcome. It changes when you update your goal or monthly amount.",
+      "useAmount": "Use {{amount}} a month",
+      "suggestionOverLimit": "This monthly amount is above your cautious limit. Consider a later date or a smaller goal instead.",
+      "progress": "{{pct}}% of {{target}}",
+      "by": "by {{date}}",
+      "onTrack": "You are on track: {{pct}}% chance.",
+      "offTrack": "Behind plan",
+      "monthly": "Each month",
+      "left": "To go",
+      "monthsLeft": "{{months}} months left",
+      "holdings": "Holdings",
+      "noHoldings": "Nothing bought yet. Plan the goal to see where the money could go.",
+      "alerts": "Alerts for this goal",
+      "plan": "Plan this goal",
+      "editPlan": "Edit plan",
+      "stocks": "Choose stocks",
+      "riskLevel": "Risk {{level}}",
+      "progressChart": "Saved over time",
+      "chanceOnTime": "chance of the goal on time",
+      "beatInflation": "chance to beat inflation",
+      "recalc": "recalculating…",
+      "editGoal": "Edit goal",
+      "monthlyTitle": "Monthly amount",
+      "limitChip": "Forecast limit",
+      "limitNote": "Forecast limit {{limit}} a month.",
+      "aboveLimit": "Above the forecast monthly limit: you can explore this scenario, but a plan over the limit cannot be confirmed.",
+      "leversTitle": "What would get you there",
+      "leverMore": "Invest more monthly",
+      "leverTime": "Or wait longer",
+      "leverCheaper": "Or a cheaper goal",
+      "finderBoost": "With the savings finder's {{amount}} a month, the simulated on-time chance is {{pct}}%.",
+      "buildPlan": "Build my plan",
+      "assumed": "Assumed goal — edit it"
+    },
+    "newGoal": {
+      "title": "Edit your goal",
+      "type": "What kind of goal?",
+      "name": "Name",
+      "target": "Target amount",
+      "date": "Target date",
+      "month": "Month",
+      "year": "Year",
+      "monthly": "Monthly contribution (optional)",
+      "create": "Create and plan",
+      "lead": "MosaVali plans one goal at a time; saving replaces your current goal.",
+      "currency": "Currency",
+      "years": "Years",
+      "yearsHint": "1–15 years.",
+      "save": "Save goal",
+      "errYears": "Choose between 1 and 15 years."
+    },
+    "alerts": {
+      "title": "Alerts",
+      "lead": "Only when something in your finances needs a decision.",
+      "empty": "Nothing needs your attention right now.",
+      "new": "New",
+      "kinds": {
+        "maturity": "Deposit maturity",
+        "idle": "Idle cash",
+        "buffer": "Reserve",
+        "fx_debt": "Currency risk",
+        "info": "Note"
+      }
+    },
+    "rate": {
+      "nbg": "1 $ = {{rate}} ₾ · official NBG rate, {{date}}",
+      "fallback": "1 $ ≈ {{rate}} ₾ · estimate (NBG rate unavailable)",
+      "nbgShort": "NBG",
+      "estimate": "estimate",
+      "backend": "1 $ = {{rate}} ₾ · backend snapshot"
+    },
+    "synthetic": "Synthetic demo data",
+    "progress": {
+      "title": "Reading your data",
+      "doneTitle": "Connected",
+      "steps": {
+        "reading": "Reading accounts and transactions",
+        "measuring": "Measuring cash need and spending",
+        "profiling": "Building your profile and plan"
+      },
+      "bankStatus": {
+        "ok": "connected",
+        "timeout": "timed out — continuing with the banks that answered"
+      },
+      "partial": "Some data is missing (a bank timed out or a scope was skipped), so saving suggestions stay at zero. The picture below still uses what arrived.",
+      "done": "See my financial profile"
+    },
+    "goals": {
+      "title": "Goals",
+      "lead": "The reserve comes first; one goal is planned at a time.",
+      "reserveTitle": "Protected reserve",
+      "reserveSub": "Cash that stays available before anything is invested.",
+      "reserveNow": "Now",
+      "reserveTarget": "Required",
+      "reserveShort": "Short {{amount}} — everything stays protected until the reserve is funded.",
+      "mainGoal": "Your goal",
+      "chance": "{{pct}}% chance on time"
+    },
+    "planflow": {
+      "amountsTitle": "Where your savings would go",
+      "amountsNote": "Target balances for the selected plan. Review the individual transfers before approving anything.",
+      "reserveIncluded": "Includes {{amount}} reserved for accessible cash. Amounts are rounded for display; the reserve is not an extra investment.",
+      "step": "Step {{n}} of {{total}}",
+      "steps": {
+        "buffer": "Buffer",
+        "mission": "Mission",
+        "stress": "Stress test",
+        "decide": "Decide"
+      },
+      "bufferTitle": "What stays safe",
+      "bufferLead": "Before anything is invested, this cash stays available.",
+      "protected": "Protected reserve",
+      "free": "Free to invest",
+      "cashNeed": "12-month cash need",
+      "cautious": "Cautious: {{amount}}",
+      "coverage": "Coverage target",
+      "coverageSub": "of synthetic customers, not a personal guarantee",
+      "whyTitle": "Why",
+      "whyNote": "Sensitivity to one input at a time — not causes.",
+      "fallbackNote": "Incomplete or irregular history: the reserve floor is 6 months of essential costs and an adviser review is required.",
+      "shortfall": "Your savings cannot fully cover the required reserve — short {{amount}}. Everything stays protected.",
+      "missionTitle": "Choose your mission",
+      "missionLead": "Each mission optimises something different. Trade-offs are shown in lari.",
+      "recommended": "Recommended",
+      "status": {
+        "allowed": "Allowed",
+        "ack": "Needs your OK",
+        "blocked": "Blocked"
+      },
+      "worst5": "Worst 5%",
+      "noLoss": "no loss",
+      "replay": "2014–15 replay",
+      "capacityTitle": "Risk capacity",
+      "capacityNote": "This mission is level {{level}}; your capacity is {{capacity}}. Share cap: {{cap}}%.",
+      "behaviour": "Simulator behaviour score: {{score}}/100",
+      "stressTitle": "Stress test",
+      "stressLead": "The plan replayed through four Georgian crisis episodes, and against simple fund types.",
+      "episodesTitle": "Change in the goal's buying power",
+      "episodesNote": "One-year stylised replays on the whole plan — magnitudes are approximations, not a forecast.",
+      "fundsTitle": "Fund types, not products",
+      "badCase": "bad case",
+      "decideTitle": "Review and approve",
+      "backToGoal": "Back to the plan",
+      "stocksLink": "Explore single stocks — see what one holding would do to your plan"
+    },
+    "profile": {
+      "historyMonths": "{{n}} months of history",
+      "incomeTitle": "Income",
+      "incomeType": "Type",
+      "incomeTypes": {
+        "salaried": "Salaried",
+        "pensioner": "Pension",
+        "self_employed": "Self-employed",
+        "seasonal": "Seasonal business",
+        "remittance": "Remittances"
+      },
+      "monthlyAvg": "Monthly average",
+      "stability": "Income stability",
+      "spendingTitle": "Spending by category",
+      "spendingAvg": "Monthly average",
+      "essential": "Essential",
+      "forecastTitle": "Forecasts",
+      "cashNeed": "12-month cash need",
+      "cashNeedSub": "Cautious {{cautious}} · {{pct}}% coverage target",
+      "nextSpend": "Next month's spending",
+      "nextSpendSub": "Cautious {{cautious}} · {{pct}}% coverage target",
+      "basis": {
+        "cash_need_model": "Reserve set by the cash-need model's cautious estimate.",
+        "minimum_rule": "Reserve set by the 3-month minimum rule — the model's estimate is lower.",
+        "fallback_minimum": "Reserve set by the 6-month fallback minimum (incomplete or irregular history).",
+        "all_assets": "All savings protected: essential costs could not be measured."
+      },
+      "boundCollapsed": "Most similar synthetic customers needed no extra cash, so the cautious estimate equals the expected one; the minimum-reserve rule protects you.",
+      "fallbackNote": "History is incomplete or irregular — the minimum reserve is 6 months and an adviser review is required.",
+      "capacityTitle": "Risk capacity",
+      "capacityLevel": "Capacity level",
+      "capacityNote": "Measured from your history, not a quiz. Equity share cap: {{cap}}%.",
+      "parts": {
+        "horizon": "Time horizon",
+        "buffer": "Buffer coverage",
+        "stability": "Income stability",
+        "age": "Age",
+        "obligations": "Obligations"
+      },
+      "consentTitle": "Consent",
+      "consentBanks": "Banks",
+      "consentScopes": "Scopes",
+      "consentExpires": "Expires",
+      "privacyLink": "Audit log, models and revoke access"
+    },
+    "cancel": "Cancel",
+    "demo": {
+      "title": "Demo session",
+      "desc": "Creating a demo session…",
+      "synthetic": "Demo session (synthetic)",
+      "unknown": "Unknown demo customer “{{id}}”."
+    },
+    "decide": {
+      "retryExplanation": "Try the explanation again",
+      "fullExplanation": "Read the full explanation and evidence",
+      "lead": "Mission: {{mission}}. Read why, check the guardrails, then approve each step yourself. MosaVali never executes anything.",
+      "noMission": "Choose a mission on the Plan step first.",
+      "summary": {
+        "mission": "Mission",
+        "monthly": "Monthly",
+        "chance": "Chance of the goal"
+      },
+      "whyTitle": "Why this plan",
+      "whySub": "How the plan relates to your goal and the cash you need to keep available.",
+      "shapleyTitle": "Technical details: what drives the allocation",
+      "shapleySub": "exact Shapley values from {{n}} optimiser runs; sensitivity of the optimisation, not causes",
+      "shapleyFeature": "Your situation",
+      "shapleyRef": "ref.",
+      "guardTitle": "Guardrails",
+      "guardSub": "The compliance agent checked this mission.",
+      "blockedNote": "This mission is blocked and cannot be confirmed.",
+      "switchProtect": "Switch to Protect",
+      "ackLabel": "I have read warning {{rule}} and still choose this mission.",
+      "overLimit": "The monthly amount {{amount}} is above your forecast limit of {{limit}} — a plan over the limit cannot be confirmed.",
+      "lowerInGoal": "Lower it on the goal page",
+      "confirm": "Confirm mission and draft trades",
+      "errMissing": "Please confirm the warning first: {{rules}}.",
+      "errReconfirm": "Review and confirm the mission again.",
+      "errChange": "Change the amount and save again.",
+      "backToChecks": "Back to the checks",
+      "tradesTitle": "Trades for your approval",
+      "tradesSub": "Chance of the goal: {{chance}}% · term deposits move only when they mature · edits are re-checked by the compliance agent.",
+      "tradesEmpty": "Nothing to move: your savings already match this mission.",
+      "approvedCount": "{{n}} / {{total}} approved",
+      "from": "From",
+      "to": "To",
+      "amount": "Amount, GEL",
+      "gelPerMonth": "GEL per month",
+      "save": "Save",
+      "approve": "Approve",
+      "reject": "Reject",
+      "status": {
+        "proposed": "Proposed",
+        "approved": "Approved",
+        "rejected": "Rejected",
+        "edited": "Edited, not approved",
+        "blocked": "Blocked"
+      },
+      "prepare": "Prepare signed-ready instruction",
+      "docTitle": "Instruction draft",
+      "print": "Print or save as PDF",
+      "docStep": "Step",
+      "docWhen": "When",
+      "docTotal": "One-off total",
+      "docMonthly": "Monthly total",
+      "docWarnings": "Warnings acknowledged by the customer",
+      "signCustomer": "Customer signature",
+      "signPartner": "Partner bank or broker",
+      "stepN": "Step {{n}}",
+      "monthlyStep": "monthly",
+      "oneOffStep": "one-off"
+    },
+    "privacy": {
+      "title": "Privacy & audit",
+      "lead": "Everything MosaVali did with your consent, in order — and the models behind the numbers.",
+      "verifyOk": "The audit log verifies — every entry is chained to the previous one.",
+      "verifyBroken": "Verification failed at entry {{at}}.",
+      "entries": "{{n}} entries",
+      "head": "head",
+      "badgeValid": "Valid",
+      "badgeBroken": "Broken",
+      "timelineTitle": "Timeline",
+      "modelsTitle": "Models behind the numbers",
+      "model": {
+        "liquidity": "Cash-need model",
+        "spending": "Spending forecast",
+        "peers": "Peer clustering"
+      },
+      "modelMetrics": "test MAE {{mae}} ₾ · RMSE {{rmse}} ₾ · baseline MAE {{baseMae}} ₾ · coverage {{coverage}}%",
+      "peerCaveat": "Peers are clustered on age band and region as situation inputs only — never in the regressions.",
+      "diag": "The model raises the reserve for {{x}}% of test customers; coverage of real 12-month need rises from {{a}}% to {{b}}%.",
+      "protected": "Protected attributes are never regression inputs.",
+      "synthetic": "All customers, banks and transactions are synthetic. Population-level metrics, not personal guarantees.",
+      "revokeTitle": "Revoke access",
+      "revokeLead": "Ends the consent immediately and deletes this session's data on the server. The audit log keeps a receipt.",
+      "revokeAction": "Revoke consent",
+      "revokeConfirm": "Revoke access now? The app forgets this customer and you return to the start. You can connect again any time.",
+      "revokeYes": "Yes, revoke",
+      "revokedTitle": "Access revoked",
+      "revokedLead": "Consent ended. This is the receipt from the audit log.",
+      "revokedDone": "Back to the start",
+      "receipt": {
+        "consent": "Consent",
+        "at": "Revoked",
+        "purged": "Data deleted",
+        "head": "Audit head",
+        "items": {
+          "access_tokens": "access tokens",
+          "accounts": "accounts",
+          "transactions": "transactions",
+          "derived_results": "derived results",
+          "trade_proposals": "trade proposals",
+          "simulator_runs": "simulator runs",
+          "audit_entries": "audit entries"
+        }
+      },
+      "actor": {
+        "customer": "you",
+        "compliance_agent": "compliance agent",
+        "execution_agent": "execution agent",
+        "explainability_agent": "explainability agent",
+        "funds_agent": "funds agent",
+        "ingestion_agent": "bank fetch",
+        "orchestrator": "profile",
+        "sandbox_agent": "simulator"
+      },
+      "events": {
+        "consent": {
+          "granted": "Consent granted",
+          "revoked": "Consent revoked"
+        },
+        "bank": {
+          "fetched": "Bank data fetched",
+          "timeout": "Bank timed out"
+        },
+        "fallback": {
+          "partial_data": "Partial data — conservative buffer"
+        },
+        "profile": {
+          "built": "Profile built"
+        },
+        "goal": {
+          "updated": "Goal updated"
+        },
+        "mission": {
+          "checked": "Mission checked",
+          "blocked": "Mission blocked",
+          "selected": "Mission selected"
+        },
+        "warning": {
+          "acknowledged": "Warning acknowledged"
+        },
+        "trades": {
+          "proposed": "Trades proposed"
+        },
+        "trade": {
+          "approved": "Trade approved",
+          "rejected": "Trade rejected",
+          "edited": "Trade edited",
+          "blocked": "Trade blocked"
+        },
+        "recurring": {
+          "blocked": "Recurring trade blocked"
+        },
+        "instruction": {
+          "generated": "Instruction generated"
+        },
+        "explanation": {
+          "generated": "Explanation generated"
+        },
+        "funds": {
+          "compared": "Fund types compared"
+        },
+        "simulator": {
+          "started": "Simulator started",
+          "action": "Simulator decision",
+          "completed": "Simulator finished"
+        },
+        "stock_check": {
+          "viewed": "Stock check viewed"
+        },
+        "tbc_sandbox": {
+          "probed": "TBC sandbox probed"
+        }
+      },
+      "limitations": "Synthetic outcomes only. The cautious bound covers about 90% of synthetic customers — a population target, not a personal guarantee; shocks can lower it."
+    },
+    "sim": {
+      "title": "Crisis simulator",
+      "lead": "Before you choose, live through a real-world-shaped crisis with 10,000 virtual lari in your mission. It takes about a minute.",
+      "stepMission": "1 · Mission to practise",
+      "stepCrisis": "2 · Crisis",
+      "missions": {
+        "protect": "Protect",
+        "goal": "Goal",
+        "balance": "Balance",
+        "growth": "Growth"
+      },
+      "crises": {
+        "S08": {
+          "title": "2008–09 · War and global crisis",
+          "desc": "Global shares almost halve and the lari is devalued."
+        },
+        "S15": {
+          "title": "2014–15 · Lari shock",
+          "desc": "The lari loses about a quarter of its value against the dollar."
+        },
+        "S20": {
+          "title": "2020 · Pandemic",
+          "desc": "Markets crash in March and the lari falls 14%, then both recover."
+        },
+        "S22": {
+          "title": "2022 · Inflation, stronger lari",
+          "desc": "Prices rise about 10%, shares fall and the lari strengthens."
+        },
+        "ALL": {
+          "title": "All four crises",
+          "desc": "The full tour, about 50 months with 7 decisions."
+        }
+      },
+      "bestTest": "Best test for you",
+      "start": "Start the replay",
+      "howTitle": "How it works",
+      "how1": "The crisis plays month by month. Your line is what your money buys of your goal; the dashed line is simply holding.",
+      "how2": "At the worst moments it pauses with the news of the day and asks what you would do.",
+      "how3": "You get a behaviour score and see which missions fit how you really react. The compliance agent uses it (rule BEH-01).",
+      "howNote": "Stylised monthly paths with today's instruments. Illustrative, not exact history.",
+      "currentScore": "Your current behaviour score: {{score}}/10.",
+      "buyingPower": "Buying power",
+      "speed": "Speed",
+      "otherMissions": "Other missions",
+      "chartNote": "Dashed line: simply holding. Faint lines: the other missions.",
+      "month": "Month {{n}} of {{total}}",
+      "play": "Play",
+      "pause": "Pause",
+      "skip": "Skip ahead",
+      "startLabel": "Start",
+      "decision": "Decision",
+      "facts": {
+        "shares": "Global shares",
+        "lari": "Lari",
+        "prices": "Prices",
+        "portfolio": "Your portfolio from peak"
+      },
+      "whatDo": "What do you do?",
+      "actions": {
+        "hold": {
+          "title": "Hold",
+          "desc": "Do nothing and keep the plan."
+        },
+        "sell": {
+          "title": "Sell to cash",
+          "desc": "Sell shares and bonds into lari savings. Deposits stay."
+        },
+        "rebalance": {
+          "title": "Rebalance",
+          "desc": "Go back to the plan's mix."
+        },
+        "buy": {
+          "title": "Buy more",
+          "desc": "Move 10% of savings into shares and bonds."
+        }
+      },
+      "debriefTitle": "Your debrief",
+      "noVerdict": "Not enough stress to judge",
+      "noVerdictSub": "This mission stayed calm. Try Growth or another crisis to see how you react.",
+      "sold": "You sold during the fall",
+      "held": "You held your nerve",
+      "beh01": "The compliance agent now uses this score (rule BEH-01).",
+      "maxDrop": "Biggest drop",
+      "vsHolding": "Your moves vs holding",
+      "fitsTitle": "Missions that fit how you reacted",
+      "ghostTitle": "How each mission ended (simply holding)",
+      "yourMission": "your run",
+      "coachTitle": "Coach",
+      "another": "Try another crisis",
+      "newRun": "New run",
+      "toDecide": "Continue to decision"
+    },
+    "stocks": {
+      "title": "Explore stocks",
+      "lead": "See what a single stock would do to your plan — before it ever touches one.",
+      "liveLabel": "Live market data (Yahoo Finance / NBG)",
+      "profiles": {
+        "big_tech": "Large US technology",
+        "ge_bank": "Georgian bank share (London)",
+        "local_small": "Local small company"
+      },
+      "exploreOnly": "Exploration only — a single stock never enters your plan or a trade.",
+      "priceUnavailable": "Price unavailable",
+      "year": "1y",
+      "unknown": "Unknown stock.",
+      "price": "Price now",
+      "asOf": "as of {{at}}",
+      "estimated": "(rate estimate)",
+      "worstFall": "Worst 12-month fall, 5y",
+      "newsTitle": "Latest news",
+      "newsUnavailable": "News unavailable right now.",
+      "newsVia": "via {{provider}}",
+      "risk": {
+        "regulation": "regulation",
+        "earnings": "earnings risk",
+        "lawsuit": "lawsuit",
+        "currency": "currency",
+        "sector": "sector",
+        "macro": "macro"
+      },
+      "effectTitle": "Effect on your plan",
+      "effectLabel": "MosaVali model with illustrative assumptions for this stock type ({{profile}}).",
+      "shareLabel": "Share of the invested part",
+      "colPlan": "Plan",
+      "colStock": "Plan + {{ticker}}",
+      "rowChance": "Chance of the goal",
+      "rowBadCase": "Bad case (5%)",
+      "rowHalving": "Chance the stock halves",
+      "prod01": "Exploration only — a single stock never enters your plan or a trade (rule PROD-01).",
+      "allNews": "All news",
+      "liveShort": "Live",
+      "filterAll": "All",
+      "colInstrument": "Instrument",
+      "colType": "Type",
+      "colChart": "1 year",
+      "colPrice": "Price",
+      "colWorst": "Worst fall",
+      "keyFigures": "Key figures",
+      "change1y": "Change, 1 year",
+      "currency": "Currency",
+      "rate": "USD/GEL (NBG)"
+    },
+    "own": {
+      "title": "Your numbers",
+      "lead": "Type your situation and MosaVali builds a synthetic customer from it — then you connect its bank, like everyone else.",
+      "nameLabel": "A name for this customer",
+      "nameHint": "Only to recognise them in the demo.",
+      "namePh": "e.g. My numbers",
+      "age": "Age",
+      "household": "Household",
+      "region": "Region",
+      "regions": {
+        "tbilisi": "Tbilisi",
+        "adjara": "Adjara",
+        "imereti": "Imereti",
+        "other": "Other"
+      },
+      "bank": "Bank",
+      "bankHint": "The demo bank your synthetic accounts sit in.",
+      "banks": {
+        "MT": "Mtatsminda Bank",
+        "RI": "Rioni Bank",
+        "KB": "Kartli Bank",
+        "TBC": "TBC Bank (Mock Sandbox)"
+      },
+      "incomeTitle": "Income",
+      "incomeKind": "Income type",
+      "incomes": {
+        "salary": "Salary",
+        "pension": "Pension",
+        "business": "Business"
+      },
+      "payDay": "Pay day",
+      "monthlyIncome": "Monthly income, GEL",
+      "spendTitle": "Monthly spending, GEL",
+      "spending": {
+        "rent": "Rent",
+        "utilities": "Utilities",
+        "groceries": "Groceries",
+        "transport": "Transport",
+        "delivery": "Delivery",
+        "dining": "Dining out",
+        "taxi": "Taxi",
+        "other": "Other"
+      },
+      "savingsTitle": "Savings today",
+      "savings": {
+        "gel_current": "GEL current account",
+        "gel_savings": "GEL savings",
+        "gel_term_deposit": "GEL term deposit",
+        "usd_savings": "USD savings",
+        "cash_at_home": "Cash at home"
+      },
+      "loanInstalment": "USD loan instalment /mo",
+      "loanBalance": "USD loan balance",
+      "loanHint": "A USD loan makes the risk capacity honest — enter instalment and remaining balance.",
+      "goalTitle": "The goal",
+      "goalKind": "Kind",
+      "goalYears": "Years",
+      "goalAmount": "Amount",
+      "submit": "Create my synthetic customer",
+      "syntheticNote": "Synthetic: generated from the numbers you typed, not real bank data. You still consent before anything is read.",
+      "errGoalAmount": "Enter a goal amount above zero.",
+      "errLoanPair": "For a USD loan, enter both the monthly instalment and the balance left — or leave both at 0.",
+      "errInvalid": "Some numbers are outside what the demo accepts. Check the values and try again."
+    },
+    "import": {
+      "title": "Import a statement",
+      "lead": "Export a CSV from your banking app. It is read on this device only.",
+      "hint": "CSV export from any Georgian bank — headers and formats are auto-detected.",
+      "pick": "Choose the CSV file",
+      "sample": "No file handy? Load the sample statement.",
+      "parseError": "Could not read that file — it needs date, amount and description columns.",
+      "errEmpty": "That file is empty or has only a header row.",
+      "errExcel": "This is an Excel workbook, not a CSV. In Excel choose File → Save As → \"CSV UTF-8\" and upload that file.",
+      "errColumns": "No date and amount columns found. The file's columns are: {{cols}}. Rename them to e.g. Date, Description, Amount (or Debit/Credit) and try again.",
+      "errRows": "The columns were found, but none of the {{n}} rows had a readable date and a non-zero amount.",
+      "errCurrency": "All {{n}} transactions are in currencies other than GEL or USD, which this demo does not support yet.",
+      "customer": "This file has {{n}} customers — whose statement to read",
+      "skipped": "{{n}} rows without a readable date or amount were left out.",
+      "otherCurrency": "{{n}} transactions in other currencies (e.g. EUR) were left out.",
+      "reviewTitle": "Check the summary",
+      "reviewLead": "{{n}} transactions over {{months}} months — adjust anything before continuing.",
+      "privacyNote": "Only these summary numbers are sent — not your transactions.",
+      "loanNote": "GEL loan payments are counted as other spending in this demo",
+      "another": "Import a different file",
+      "onDevice": "Parsed on this device"
+    },
+    "analysis": {
+      "title": "Your analysis",
+      "lead": "Built from {{n}} transactions over {{months}} months, with your consent.",
+      "capacity": "Risk capacity",
+      "shareCap": "Stocks up to {{pct}}%",
+      "factors": "What sets it",
+      "toMissions": "See plans that fit",
+      "reserveTitle": "Protected reserve",
+      "models": {
+        "liquidity": "Cash-need model",
+        "spending": "Spending model",
+        "peers": "Peer model"
+      },
+      "ofTotal": "of {{total}} in total",
+      "cautiousNeed": "Cautious estimate ({{pct}}% coverage)",
+      "shortfall": "Short of the required reserve",
+      "usdShare": "Savings in USD",
+      "usdDebt": "USD debt: {{pct}}% of liabilities",
+      "warnings": "Warnings",
+      "details": "See details",
+      "essential": "essential",
+      "modelsTitle": "Model versions behind these numbers",
+      "modelCard": "Model card and audit log",
+      "titleNamed": "{{name}}'s analysis",
+      "auditShort": "Audit log",
+      "accounts": "{{n}} accounts",
+      "ofTotalShort": "{{pct}} of savings",
+      "perMonth": "per month, cautious",
+      "total": "Total",
+      "minimum": "Minimum ({{n}} months of essentials)",
+      "required": "Required reserve",
+      "colCategory": "Category",
+      "colYou": "You",
+      "colPeers": "Similar people",
+      "colSave": "Could free",
+      "nextSpend": "Next month's spending",
+      "nextSpendCautious": "Cautious ({{pct}} coverage)",
+      "spendSub": "{{total}} a month on average, {{essential}} essential",
+      "idleLoss": "Idle cash loses a year",
+      "usdDebtShort": "Liabilities in USD",
+      "modelNames": {
+        "liquidity": "Cash-need regression",
+        "spending": "Spending regression",
+        "peers": "Peer clustering",
+        "optimizer": "Portfolio optimiser (CVaR)",
+        "rules": "Compliance rules"
+      }
+    },
+    "planTab": {
+      "title": "Plan",
+      "simulated": "Simulated",
+      "yourPlan": "Your plan, step by step",
+      "crises": "4 crises",
+      "approved": "{{n}} of {{total}} approved",
+      "notStarted": "Not started",
+      "simBody": "Practise a crisis with virtual money before you decide.",
+      "today": "in today's money",
+      "target": "Target in today's money",
+      "worst": "Bad case",
+      "lari2015": "Lari shock",
+      "mixTitle": "Where your money would go",
+      "stepsSub": "Open any step; your choices are saved on the server.",
+      "simCta": "Start a replay",
+      "capacityLevel": "Your capacity",
+      "missionLevel": "This mission",
+      "shareCap": "Stock share cap",
+      "chance": "Chance on time",
+      "chanceInflation": "Chance to beat inflation",
+      "lead": "Three steps, in order: what you can invest, how risky it is, then your goal.",
+      "s1Title": "What you can invest",
+      "s1Sub": "The reserve stays in cash; only the rest and a monthly amount within your limit are invested.",
+      "freeSub": "Available now, after the reserve",
+      "shortfall": "Your reserve is {{amount}} short of what the model asks for. Fill it before investing more.",
+      "howMeasured": "How these were measured",
+      "s2Title": "How risky it is",
+      "s2Sub": "The risk of the mix you would invest in, measured against how much risk you can carry.",
+      "overCapacity": "This mix is level {{level}}, above your capacity of {{cap}}. Choose a calmer mix or accept the warning when you approve.",
+      "withinCapacity": "This mix is level {{level}}, within your capacity of {{cap}}.",
+      "capacityWhy": "What sets your capacity",
+      "changeMix": "Change the mix",
+      "stressCta": "Test it in 4 crises",
+      "stocksTitle": "Single stocks",
+      "stocksSub": "What one stock type adds if {{pct}}% of the invested part went into it.",
+      "badYear": "Bad year (1 in 20)",
+      "toStocks": "Explore stocks",
+      "s3Title": "Your goal",
+      "s3Sub": "Once you know the amount and the risk: will it get you there on time?",
+      "chanceWith": "with {{amount}} a month",
+      "moreSteps": "Plan steps and the crisis simulator",
+      "riskTitle": "This mix against your capacity"
+    },
+    "news": {
+      "title": "News",
+      "lead": "Updates from your own finances first, then headlines for stocks you explore. No daily prices.",
+      "updates": "Updates for you",
+      "toReserve": "See your protected reserve",
+      "headlines": "Headlines",
+      "toStock": "Effect on your plan",
+      "disclaimer": "Headlines come from Yahoo Finance or GDELT and stay in English. Risk labels are keyword rules. Not investment advice."
+    },
+    "profileTab": {
+      "title": "Profile",
+      "source": {
+        "persona": "Demo customer with synthetic bank data",
+        "organiser": "Customer from the organisers' synthetic workbook",
+        "custom": "Synthetic customer built from your numbers"
+      },
+      "sourceBody": "{{n}} transactions in {{accounts}} accounts, read once with your consent.",
+      "accounts": "Accounts",
+      "matures": "matures {{date}}",
+      "cashAtHome": "Cash at home",
+      "transparency": "Transparency",
+      "audit": "Audit log and models",
+      "auditBody": "Every step, hash-chained; model metrics; withdraw consent",
+      "settings": "Settings",
+      "products": {
+        "current": "Current account",
+        "savings": "Savings account",
+        "term_deposit": "Term deposit",
+        "loan": "Loan",
+        "cash": "Cash"
+      },
+      "colAccount": "Account",
+      "colBank": "Bank",
+      "colBalance": "Balance",
+      "sourceTitle": "Data source",
+      "open": "Open"
+    },
+    "more": {
+      "why": "Why this amount",
+      "less": "Show less",
+      "allCategories": "Show all {{n}} categories",
+      "analysis": "More analysis: monthly limit, savings finder, inflation, warnings, models",
+      "lessAnalysis": "Hide the extra analysis"
+    }
+  },
+  "goals": {
+    "kinds": {
+      "car": "Car",
+      "apartment": "Apartment",
+      "education": "Education",
+      "preserve": "Protect savings",
+      "retirement": "Retirement pot",
+      "business": "Business expansion"
+    },
+    "inYears": "in {{n}} years"
+  }
+}

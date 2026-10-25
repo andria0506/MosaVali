@@ -1,0 +1,15 @@
+# Render blueprint for the FastAPI backend that the Netlify site proxies /api/* to (see netlify.toml).
+# Models are trained during the build, because *.joblib artifacts are not in git.
+# Free plan: the service sleeps after ~15 idle minutes and in-memory consent sessions reset on wake.
+services:
+  - type: web
+    name: mosavali-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt && python -m danazogi.ml.registry
+    startCommand: uvicorn danazogi.api:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.10
