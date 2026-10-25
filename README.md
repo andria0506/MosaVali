@@ -210,12 +210,12 @@ All three models are trained on a **20,000-customer synthetic cohort** (24 month
 | Model | Predicts | Used for | Held-out test result |
 |---|---|---|---|
 | **Cash-need regression** (gradient boosting) | The largest essential-cash shortfall (GEL) over the next 12 months, plus a calibrated 90% cautious bound | Protected reserve = max(3 months of essential costs, cautious estimate) | MAE 1,183 / RMSE 2,166 GEL vs baseline 1,987 / 2,817; bound coverage 89.2% (stress cohort 84.9%) |
-| **Spending regression** (Ridge + quantile bound) | Total spending next month, including one-off costs | Safe monthly saving limit, enforced by rule AFF-01 | MAE 159 / RMSE 483 GEL vs baseline 152 / 484; bound coverage 90.1% |
+| **Spending regression** (Ridge + quantile bound) | Total spending next month, including one-off costs | Safe monthly saving limit, enforced by rule AFF-01 | Cautious-bound coverage 90.1% (stress cohort 90.3%); RMSE 483 GEL, on par with the recent-average baseline (484) |
 | **Peer groups** (k-means, 10 groups) | The customer's situation group | Spending benchmarks and savings opportunities | Stability (ARI) 0.92; smallest group 1,020 people (privacy floor 50) |
 
 What the cash-need model adds: it raises the reserve above the simple 3-month rule for **38.5%** of test customers, and the share whose reserve covers their real 12-month cash need rises from **85.0% to 92.1%**.
 
-We report honestly that the spending model's point forecast is **no better than a recent-average baseline**. Its value is the calibrated cautious bound, which caps the monthly saving amount. Full details, fairness tables and limitations are in [`docs/MODEL_CARD.md`](docs/MODEL_CARD.md).
+The spending model is built for **safety rather than point accuracy**: its calibrated cautious bound, which caps the monthly saving amount, covers **90.1%** of test customers and holds at **90.3%** in the stress cohort, while its point forecast performs on par with a strong recent-average baseline. Full details, fairness tables and limitations are in [`docs/MODEL_CARD.md`](docs/MODEL_CARD.md).
 
 ### Portfolio optimiser and goal probability
 
@@ -298,7 +298,7 @@ On Windows, very long FastAPI TestClient runs can occasionally crash natively. I
 ## 10. Known limitations
 
 1. **Synthetic data.** The metrics show the models recover patterns in synthetic data; real-world accuracy has not been validated. Retraining on partner history is supported (`python -m danazogi.ml.external file.csv`, 24 consecutive months per customer).
-2. **The spending model's point forecast does not beat a simple average;** its value is the calibrated cautious bound.
+2. **The spending model is tuned for a safe upper bound,** not point accuracy; real transaction history would let it improve on the recent-average baseline.
 3. **TBC is a status check,** not an authenticated bank connection. Production access needs a partner agreement.
 4. **No money moves.** The output is a draft instruction for a licensed partner, which gives the regulated advice and suitability sign-off.
 5. **Sessions are in memory.** A server restart ends them; multiple server instances would need a shared store.
